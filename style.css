@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Background color set to black */
+}
+
+.container {
+    width: 400px;
+    height: min-content;
+    background-color: #000; /* Container color set to black */
+    border-radius: 12px;
+    padding: 28px;
+    color: #fff; /* Text color set to white */
+}
+
+.search-box {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input {
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff; /* Input text color set to white */
+    background-color: #333; /* Input background color set to a darker shade */
+    padding: 12px 16px;
+    border-radius: 14px;
+}
+
+.search-box input::placeholder {
+    color: #aaa; /* Placeholder text color set to a light gray */
+}
+
+.search-box button {
+    width: 46px;
+    height: 46px;
+    background-color: #333; /* Button background color set to a darker shade */
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff; /* Button text color set to white */
+}
+
+.search-box button:hover {
+    color: #000; /* Hover text color set to black */
+    background-color: #fff; /* Hover background color set to white */
+}
+
+.weather-body {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+    display: none;
+}
+
+.weather-body img {
+    width: 60%;
+}
+
+.weather-box {
+    margin-block: 20px;
+    text-align: center;
+}
+
+.weather-box .temperature {
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+    color: #fff; /* Temperature text color set to white */
+}
+
+.weather-box .temperature sup {
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+    color: #fff; /* Superscript text color set to white */
+}
+
+.weather-box .description {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff; /* Description text color set to white */
+}
+
+.weather-box .feels-like {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff; /* Feels-like text color set to white */
+}
+
+.weather-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.humidity, .wind {
+    display: flex;
+    align-items: center;
+    color: #fff; /* Humidity and wind text color set to white */
+}
+
+.humidity {
+    margin-left: 20px;
+}
+
+.wind {
+    margin-right: 20px;
+}
+
+.weather-details i {
+    font-size: 36px;
+    color: #fff; /* Icons color set to white */
+}
+
+.weather-details .text {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.text span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff; /* Text span color set to white */
+}
+
+.location-not-found {
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff; /* Location not found text color set to white */
+}
+
+.location-not-found h1 {
+    font-size: 20px;
+    color: #fff; /* Error message text color set to white */
+    margin-block-end: 15px;
+}
+
+.location-not-found img {
+    width: 80%;
+}
